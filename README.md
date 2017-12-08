@@ -30,7 +30,7 @@ Add the following additional parameters to the `composer.json` of your root pack
 ```
     "extra": {
         "drupal-app-dir": "app",
-        "drupal-web-dir": "docroot",
+        "drupal-web-dir": "web",
         "..."
     }
 ```
