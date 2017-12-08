@@ -20,7 +20,12 @@ The implementation are based on:
 ## Usage
 Make sure you have a based [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project) project created.
 
-Add the following additional parameters to the `composer.json` of your root package:
+Rename your current docroot directory to `app`.
+```
+mv web app
+```
+
+Update the `composer.json` of your root package with the following changes:
 ```
     "scripts": {
         "drupal-paranoia": "Jkribeiro\\DrupalComposerParanoia\\Plugin::install",
@@ -29,19 +34,28 @@ Add the following additional parameters to the `composer.json` of your root pack
 ```
 ```
     "extra": {
+        "installer-paths": {
+            "app/core": ["type:drupal-core"],
+            "app/libraries/{$name}": ["type:drupal-library"],
+            "app/modules/contrib/{$name}": ["type:drupal-module"],
+            "app/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "app/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
         "drupal-app-dir": "app",
-        "drupal-web-dir": "docroot",
+        "drupal-web-dir": "web",
         "..."
     }
 ```
+
 Use `composer require ...` to install this Plugin in your project.
 ```
 composer require jkribeiro/drupal-composer-paranoia:~1
 ```
 
-Done! Plugin installed.
+Done! Plugin and new docroot installed.
 
-Every time you install or update a Drupal package, the paranoia installer will rebuild the `drupal-web-dir` folder with the symlinks of the asset files from the `drupal-app-dir` folder.
+Now, every time you install or update a Drupal package, the paranoia installer will rebuild the `drupal-web-dir` folder with the symlinks of the asset files from the `drupal-app-dir` folder.
 
 If you need to rebuild the docroot folder, for example, when developing locally in the app folder with new themes images, CSS and JS, you can use the command:
 ```
