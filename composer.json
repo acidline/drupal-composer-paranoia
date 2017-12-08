@@ -1,0 +1,21 @@
+{
+  "name": "jkribeiro/drupal-composer-paranoia",
+  "description": "Composer plugin for moving all PHP files out of the docroot when installing and updating packages.",
+  "type": "composer-plugin",
+  "license": "GPL-2.0+",
+  "require": {
+      "php": ">=5.4.5",
+      "composer-plugin-api": "^1.1"
+  },
+  "autoload": {
+      "psr-4": {
+          "Jkribeiro\\DrupalComposerParanoia\\": "src/"
+      }
+  },
+  "extra": {
+      "class": "Jkribeiro\\DrupalComposerParanoia\\Plugin"
+  },
+  "require-dev": {
+      "composer/composer": "dev-master"
+  }
+}
