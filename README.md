@@ -43,7 +43,7 @@ Done! Plugin installed.
 
 Every time you install or update a Drupal package, the paranoia installer will rebuild the `drupal-web-dir` folder with the symlinks of the asset files from the `drupal-app-dir` folder.
 
-If you need to rebuild the docroot folder, for example, when working locally in the app folder with new themes images, CSS and JS, you can use the command:
+If you need to rebuild the docroot folder, for example, when developing locally in the app folder with new themes images, CSS and JS, you can use the command:
 ```
 composer run-script drupal-paranoia
 ```
