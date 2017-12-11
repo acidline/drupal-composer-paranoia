@@ -62,3 +62,6 @@ If you need to rebuild the docroot folder, for example, when developing locally 
 composer run-script drupal-paranoia
 ```
 Remember: The document root configuration of your web server should point to `drupal-web-dir` path.
+
+## Related Plugin
+- https://github.com/jkribeiro/drupal-composer-paranoia-acquia - Run paranoia mode on Acquia Cloud environments.
