@@ -1,4 +1,4 @@
-# drupal-composer-paranoia
+# Drupal Composer paranoia mode
 This is an experimental Composer plugin that aims to improve the website security for composer-based Drupal websites by moving all __PHP files out of docroot__.
 
 The critical security issue with [Coder](https://www.drupal.org/project/coder) was a good example to consider moving PHP files outside of docroot: 
