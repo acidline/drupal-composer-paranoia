@@ -1,5 +1,5 @@
 # drupal-composer-paranoia
-This is an __experimental__ Composer plugin to be used in Drupal composer projects that want to improve the site security by moving __all PHP files out of docroot__.
+This is an experimental Composer plugin that aims to improve the website security for composer-based Drupal websites by moving all __PHP files out of docroot__.
 
 The critical security issue with [Coder](https://www.drupal.org/project/coder) was a good example to consider moving PHP files outside of docroot: 
 - [Remote Code Execution - SA-CONTRIB-2016-039](https://www.drupal.org/node/2765575)
