@@ -228,7 +228,7 @@ class Installer {
     // Create symlinks.
     $this->createAssetSymlinks();
 
-    $this->io->write("> drupal-paranoia: " . $this->webDir . " folder has been rebuilt.");
+    $this->io->write("> drupal-composer-paranoia: " . $this->webDir . " folder has been rebuilt.");
   }
 
   /**
