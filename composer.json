@@ -1,6 +1,6 @@
 {
   "name": "jkribeiro/drupal-composer-paranoia",
-  "description": "Composer plugin for moving all PHP files out of the docroot when installing and updating packages.",
+  "description": "Composer plugin to improve the security of composer-based Drupal projects by moving all PHP files out of docroot.",
   "type": "composer-plugin",
   "license": "GPL-2.0+",
   "require": {
