@@ -35,13 +35,18 @@ class Installer {
   public $assetFileTypes = [
     '.htaccess',
     '*.css',
+    '*.eot',
     '*.ico',
     '*.gif',
     '*.jpeg',
     '*.jpg',
     '*.js',
+    '*.otf',
     '*.png',
     '*.svg',
+    '*.ttf',
+    '*.woff',
+    '*.woff2',
   ];
 
   /**
